@@ -2,12 +2,13 @@ let provider
 let providerRestriction
 let consumer
 const showElementById = (elementId) => {
+    document.getElementById(elementId)?.classList.add('pr-visible')
+    document.getElementById(elementId)?.classList.remove('pr-hidden')
     document.getElementById(elementId)?.classList.remove('hidden')
 }
 
 const hideElementById = (elementId) => {
-    document.getElementById(elementId)?.classList.add('hidden')
-
+    document.getElementById(elementId)?.classList.add('pr-hidden')
 }
 
 const start = () => {
