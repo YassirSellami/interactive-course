@@ -2,7 +2,7 @@ let provider
 let providerRestriction
 let consumer
 const showElementById = (elementId) => {
-    document.getElementById(elementId)?.classList.add('visible')
+    document.getElementById(elementId)?.classList.remove('hidden')
 }
 
 const hideElementById = (elementId) => {
